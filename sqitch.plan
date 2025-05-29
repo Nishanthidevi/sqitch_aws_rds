@@ -1,0 +1,7 @@
+%syntax-version=1.0.0
+%project=aws_sqitch_project
+
+users_table_creating 2025-05-29T11:25:14Z Nishanthidevi.R <Nishanthidevi.R@TL500> # Create users table
+sample_user_values 2025-05-29T11:30:46Z Nishanthidevi.R <Nishanthidevi.R@TL500> # Adding sample users
+insert_new_columns 2025-05-29T11:43:23Z Nishanthidevi.R <Nishanthidevi.R@TL500> # Firstname and Lastname columns added
+new_users_fname_lname 2025-05-29T11:52:34Z Nishanthidevi.R <Nishanthidevi.R@TL500> # Inserting new users
