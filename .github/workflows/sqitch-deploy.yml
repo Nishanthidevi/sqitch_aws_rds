@@ -18,8 +18,8 @@ jobs:
       # Step 2: Install PostgreSQL client
       - name: Install PostgreSQL
         run: |
-          choco install postgresql --version=17.5 -y
-          echo "C:\Program Files\PostgreSQL\17\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+          choco install postgresql -y
+          echo "C:\Program Files\PostgreSQL\15\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
 
       # Step 3: Install Strawberry Perl (needed for Sqitch on Windows)
       - name: Install Strawberry Perl
