@@ -31,17 +31,6 @@ jobs:
           cpan App::Sqitch
           sqitch --version
 
-      # # Step 5: Set environment variables
-      # - name: Set environment
-      #   run: |
-      #     echo "PGUSER=${{ secrets.PGUSER }}" >> $env:GITHUB_ENV
-      #     echo "PGPASSWORD=${{ secrets.PGPASSWORD }}" >> $env:GITHUB_ENV
-      #     echo "PGHOST=${{ secrets.PGHOST }}" >> $env:GITHUB_ENV
-      #     echo "PGDATABASE=${{ secrets.PGDATABASE }}" >> $env:GITHUB_ENV
-      #     echo "PGPORT=${{ secrets.PGPORT }}" >> $env:GITHUB_ENV
-
-      # Step 6: Deploy using Sqitch
       - name: Deploy with Sqitch
         run: |
-           run: |
           sqitch deploy db:pg://postgres:Postgres*1234@poc-postgres-db1.cp2s6w4mkgk3.ap-south-1.rds.amazonaws.com:5432/mydb
